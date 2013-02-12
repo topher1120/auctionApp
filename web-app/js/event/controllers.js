@@ -1,5 +1,7 @@
+'use strict';
+
 function EventListCtrl($scope, $http) {
-    $scope.pageName = "Event List"
+    $scope.pageName = "My Event List"
 }
 
 //PhoneListCtrl.$inject = ['$scope', '$http'];

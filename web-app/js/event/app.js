@@ -1,3 +1,5 @@
+'use strict';
+
 angular.module('eventApp', []).
     config(['$routeProvider', function($routeProvider) {
         $routeProvider.

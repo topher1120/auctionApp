@@ -1,8 +1,13 @@
 modules = {
+    core{
+        resource url: '/css/bootstrap-2.3.0.css'
+    }
+
     angular {
-        dependsOn 'jquery'
+        dependsOn 'core, jquery'
         resource url:'/js/lib/angular1.0.4.js', disposition: 'head'
-        resource url: '/js/lib/angular-resource1.0.4.js', disposition: 'head'
+        resource url: '/js/lib/angular-resource-1.0.4.js', disposition: 'head'
+        resource url: '/js/lib/angular-bootstrap-1.0.4.js', disposition: 'head'
     }
 
     events_ui {

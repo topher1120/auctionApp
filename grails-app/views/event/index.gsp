@@ -7,7 +7,15 @@
   <r:layoutResources />
 </head>
 <body>
-    <h1>Events page</h1>
-    <div ng-view></div>
+    <div class="container-fluid">
+        <div class="row-fluid">
+            <div class="span10 offset2">
+                <div ng-view></div>
+            </div>
+        </div>
+    </div>
+
+
+
 </body>
 </html>
