@@ -21,6 +21,15 @@
                                 <th>Attendees</th>
                                 <th>Bid Items</th>
                                 <th>Description</th>
+                                <th></th>
+                            </tr>
+                            <tr ng-repeat="event in currentEvents">
+                                <td>{{event.eventName}}</td>
+                                <td>{{event.eventDate}}</td>
+                                <td>{{event.attendees}}</td>
+                                <td>{{event.bidItems}}</td>
+                                <td>{{event.eventDesc}}</td>
+                                <td><a href="#/edit/{{event.id}}">Edit</a></td>
                             </tr>
                         </table>
                     </div>
