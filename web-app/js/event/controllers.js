@@ -5,7 +5,15 @@ function EventListCtrl($scope, $http, $location) {
     $scope.currentEvents = [
         {
             "id":3,
-            "eventName": "Casino Night",
+            "eventName": "Casino Night 2012",
+            "eventDesc": "Casino Night",
+            "eventDate": "2/2/2012",
+            "attendees": 115,
+            "bidItems": 83
+        },
+        {
+            "id":4,
+            "eventName": "Casino Night 2013",
             "eventDesc": "Bourbon Street Casino Night",
             "eventDate": "2/4/2013",
             "attendees": 150,
@@ -16,5 +24,12 @@ function EventListCtrl($scope, $http, $location) {
 //PhoneListCtrl.$inject = ['$scope', '$http'];
 
 function EventEditCtrl($scope, $http){
-    $scope.event = {}
+    $scope.event = {
+        "id":3,
+        "eventName": "Casino Night 2012",
+        "eventDesc": "Casino Night",
+        "eventDate": "2/2/2012",
+        "attendees": 115,
+        "bidItems": 83
+    }
 }
