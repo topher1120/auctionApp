@@ -2,7 +2,7 @@
     <div class="span12">
         <div class="row-fluid">
             <div class="span12">
-                <input type="button" value="Add Event" />
+                <button onclick="window.location = '#/edit/new'" >Add Event</button>
             </div>
         </div>
         <div class="row-fluid">

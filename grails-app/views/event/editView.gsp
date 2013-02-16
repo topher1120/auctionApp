@@ -1,6 +1,6 @@
 <div class="row-fluid">
     <div class="span12">
-        <h1>Event Details</h1>
+        <h1>Event Details</h1><a href="#/list">Return to List</a>
     </div>
 </div>
 
@@ -14,6 +14,10 @@
             <div class="eventItem">
                 <label for="eventDesc" class="eventLabel">Event Description</label>
                 <textarea id="eventDesc" class="eventField" ng-model="event.eventDesc" rows="3" cols="45" />
+            </div>
+            <div class="eventItem">
+                <label for="eventDate" class="eventLabel">Event Date</label>
+                <input id="eventDate" class="eventField" type="date" ng-model="event.eventDate" />
             </div>
             <div class="eventItem">
                 <button ng-click="update(event)">Save</button>

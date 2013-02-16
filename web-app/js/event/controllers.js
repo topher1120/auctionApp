@@ -4,7 +4,7 @@ function EventListCtrl($scope, $http, $location) {
     $scope.pageName = "My Event List"
     $scope.currentEvents = [
         {
-            "id":3,
+            "id": 3,
             "eventName": "Casino Night 2012",
             "eventDesc": "Casino Night",
             "eventDate": "2/2/2012",
@@ -12,7 +12,7 @@ function EventListCtrl($scope, $http, $location) {
             "bidItems": 83
         },
         {
-            "id":4,
+            "id": 4,
             "eventName": "Casino Night 2013",
             "eventDesc": "Bourbon Street Casino Night",
             "eventDate": "2/4/2013",
@@ -23,21 +23,25 @@ function EventListCtrl($scope, $http, $location) {
 }
 //PhoneListCtrl.$inject = ['$scope', '$http'];
 
-function EventEditCtrl($scope, $http){
-    $scope.master = {
-        "id":3,
-        "eventName": "Casino Night 2012",
-        "eventDesc": "Casino Night",
-        "eventDate": "2/2/2012",
-        "attendees": 115,
-        "bidItems": 83
+function EventEditCtrl($scope, $http, $routeParams) {
+    $scope.eventId = $routeParams.eventId
+    if ($scope.eventId == 'new') {
+        $scope.master = {}
+    } else {
+        $scope.master = {
+            "id": 3,
+            "eventName": "Casino Night 2012",
+            "eventDesc": "Casino Night",
+            "eventDate": "2/2/2012",
+            "attendees": 115,
+            "bidItems": 83
+        }
     }
-
-    $scope.update = function(event){
+    $scope.update = function (event) {
         $scope.master = angular.copy(event);
     }
 
-    $scope.reset = function(){
+    $scope.reset = function () {
         $scope.event = angular.copy($scope.master);
     }
 
