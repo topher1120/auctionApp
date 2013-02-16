@@ -24,7 +24,7 @@ function EventListCtrl($scope, $http, $location) {
 //PhoneListCtrl.$inject = ['$scope', '$http'];
 
 function EventEditCtrl($scope, $http){
-    $scope.event = {
+    $scope.master = {
         "id":3,
         "eventName": "Casino Night 2012",
         "eventDesc": "Casino Night",
@@ -32,4 +32,14 @@ function EventEditCtrl($scope, $http){
         "attendees": 115,
         "bidItems": 83
     }
+
+    $scope.update = function(event){
+        $scope.master = angular.copy(event);
+    }
+
+    $scope.reset = function(){
+        $scope.event = angular.copy($scope.master);
+    }
+
+    $scope.reset();
 }
