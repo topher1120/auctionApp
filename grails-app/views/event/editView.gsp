@@ -17,7 +17,7 @@
             </div>
             <div class="eventItem">
                 <label for="eventDate" class="eventLabel">Event Date</label>
-                <input id="eventDate" class="eventField" type="date" ng-model="event.eventDate" />
+                <input id="eventDate" class="eventField" type="text" ng-model="event.eventDate" />
             </div>
             <div class="eventItem">
                 <button ng-click="update(event)">Save</button>
