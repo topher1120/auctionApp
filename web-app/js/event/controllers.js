@@ -23,7 +23,7 @@ function EventListCtrl($scope, $http, $location) {
 }
 //PhoneListCtrl.$inject = ['$scope', '$http'];
 
-function EventEditCtrl($scope, $http, $routeParams) {
+function EventEditCtrl($scope, $http, $routeParams, $location) {
     $scope.eventId = $routeParams.eventId
     if ($scope.eventId == 'new') {
         $scope.master = {}
@@ -39,6 +39,8 @@ function EventEditCtrl($scope, $http, $routeParams) {
     }
     $scope.update = function (event) {
         $scope.master = angular.copy(event);
+        //TODO display a "Processing" message and call back to the server to update.
+        $location.path("#/list");
     }
 
     $scope.reset = function () {
