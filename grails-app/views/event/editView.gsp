@@ -1,6 +1,6 @@
 <div class="row-fluid">
-    <div class="span12">
-        <h1>Event Details</h1><a href="#/list">Return to List</a>
+    <div class="span12 page-header">
+        <h2>Event Details</h2><a class="btn btn-primary" href="#/list">Return to List</a>
     </div>
 </div>
 

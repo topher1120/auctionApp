@@ -1,27 +1,23 @@
 <div class="row-fluid">
     <div class="span12">
         <div class="row-fluid">
-            <div class="span12">
-                <button onclick="window.location = '#/edit/new'" >Add Event</button>
-            </div>
-        </div>
-        <div class="row-fluid">
             <div class="span10 offset1">
                 <div class="row-fluid">
-                    <div class="span12">
-                        Current Events
+                    <div class="span12 page-header">
+                        <span style="font-size: 2em; font-weight: bold;">Current Events</span>
+                        <button class="btn btn-large btn-primary pull-right" onclick="window.location = '#/edit/new'" >Add Event</button>
                     </div>
                 </div>
                 <div class="row-fluid">
                     <div class="span12">
-                        <table>
+                        <table class="table table-striped table-hover">
                             <tr>
                                 <th>Event Name</th>
                                 <th>Event Date</th>
                                 <th>Attendees</th>
                                 <th>Bid Items</th>
                                 <th>Description</th>
-                                <th></th>
+                                <th>Actions</th>
                             </tr>
                             <tr ng-repeat="event in currentEvents">
                                 <td>{{event.eventName}}</td>
@@ -29,7 +25,7 @@
                                 <td>{{event.attendees}}</td>
                                 <td>{{event.bidItems}}</td>
                                 <td>{{event.eventDesc}}</td>
-                                <td><a href="#/edit/{{event.id}}">Edit</a></td>
+                                <td><a class="btn btn-info" href="#/edit/{{event.id}}">Edit</a></td>
                             </tr>
                         </table>
                     </div>
