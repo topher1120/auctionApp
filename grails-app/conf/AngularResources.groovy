@@ -1,6 +1,6 @@
 modules = {
     core{
-        resource url: '/css/bootstrap-2.3.0.css'
+        resource url: '/css/theme/bootstrap-slate-2.3.0.css'
         resource url: '/css/auction.css'
     }
 
