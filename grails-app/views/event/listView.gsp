@@ -4,8 +4,8 @@
             <div class="span10 offset1">
                 <div class="row-fluid">
                     <div class="span12 page-header">
-                        <span style="font-size: 2em; font-weight: bold;">Current Events</span>
-                        <button class="btn btn-large btn-primary pull-right" onclick="window.location = '#/edit/new'" >Add Event</button>
+                        <span class="auctionHeading">Current Events</span>
+                        <button class="btn btn-primary pull-right" onclick="window.location = '#/edit/new'" >Add Event</button>
                     </div>
                 </div>
                 <div class="row-fluid">
