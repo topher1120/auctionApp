@@ -8,12 +8,11 @@
 </head>
 <body>
     <div class="navbar">
-        <div class="navbar-inner">
-            <a class="brand" href="#">Eventer</a>
-            <ul class="nav">
-                <li class="active"><a href="#">Events</a></li>
-            </ul>
-        </div>
+        <a class="navbar-brand" href="#">Eventer</a>
+        <ul class="nav navbar-nav">
+            <li class="active"><a href="#">Events</a></li>
+        </ul>
+
     </div>
     <div class="container-fluid">
         <div class="row-fluid">
@@ -22,8 +21,5 @@
             </div>
         </div>
     </div>
-
-
-
 </body>
 </html>
