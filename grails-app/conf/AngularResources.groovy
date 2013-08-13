@@ -15,5 +15,6 @@ modules = {
         dependsOn 'angular'
         resource url: '/js/event/controllers.js', disposition: 'head'
         resource url: '/js/event/app.js', disposition: 'head'
+        resource url: '/js/event/services.js', disposition: 'head'
     }
 }

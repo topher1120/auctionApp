@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('eventApp', []).
+angular.module('eventApp', ['eventServices']).
     config(['$routeProvider', function($routeProvider) {
         $routeProvider.
             when('/list', {templateUrl: 'event/listView',   controller: EventListCtrl}).
