@@ -7,19 +7,29 @@
   <r:layoutResources />
 </head>
 <body>
-    <div class="navbar">
-        <a class="navbar-brand" href="#">Eventer</a>
-        <ul class="nav navbar-nav">
-            <li class="active"><a href="#">Events</a></li>
-        </ul>
+    <nav class="navbar" role="navigation">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">Eventer</a>
+        </div>
+        <div class="collapse navbar-collapse navbar-ex1-collapse">
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="#">Events</a></li>
+            </ul>
+        </div>
+    </nav>
 
-    </div>
-    <div class="container-fluid">
-        <div class="row-fluid">
-            <div class="span10 offset2">
-                <div ng-view></div>
-            </div>
+    <div class="row">
+        <div class="col-md-10 col-md-offset-1">
+            <div ng-view></div>
         </div>
     </div>
+
+    <r:layoutResources />
 </body>
 </html>
