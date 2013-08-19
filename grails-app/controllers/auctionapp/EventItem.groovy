@@ -8,4 +8,5 @@ class EventItem {
     String eventDate
     Integer attendees
     Integer bidItems
+    Integer bidItemsTotal
 }

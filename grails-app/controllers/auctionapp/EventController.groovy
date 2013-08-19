@@ -9,16 +9,26 @@ class EventController {
             "eventDesc": "Casino Night",
             "eventDate": "2/2/2012",
             "attendees": 115,
-            "bidItems": 83)
+            "bidItems": 83,
+            "bidItemsTotal": 15400)
 
     private EventItem item4 = new EventItem("id": 4,
             "eventName": "Casino Night 2013",
             "eventDesc": "Bourbon Street Casino Night",
             "eventDate": "2/4/2013",
             "attendees": 150,
-            "bidItems": 125)
+            "bidItems": 125,
+            bidItemsTotal: 25600)
 
-    private def eventList = [item3, item4]
+    private EventItem item5 = new EventItem('id': 5,
+            "eventName": "Blackjack Tonight 2013",
+            "eventDesc": "Blackjack auction event",
+            "eventDate": "6/15/2013",
+            "attendees": 95,
+            "bidItems": 70,
+            bidItemsTotal: 13500)
+
+    private def eventList = [item3, item4, item5]
 
     def index() {}
 
@@ -35,7 +45,9 @@ class EventController {
             render item3 as JSON
         } else if(("4").equals(id)){
             render item4 as JSON
-        } else{
+        } else if(("5").equals(id)){
+            render item5 as JSON
+        }else{
             //TODO make explicit 404 for JSON render
         }
     }

@@ -5,24 +5,27 @@
     </div>
 </div>
 <div class="row">
-    <div class="col-md-12">
-        <table class="table table-striped table-hover">
-            <tr>
-                <th>Event Name</th>
-                <th>Event Date</th>
-                <th>Attendees</th>
-                <th>Bid Items</th>
-                <th>Description</th>
-                <th>Actions</th>
-            </tr>
-            <tr ng-repeat="event in currentEvents">
-                <td>{{event.eventName}}</td>
-                <td>{{event.eventDate}}</td>
-                <td>{{event.attendees}}</td>
-                <td>{{event.bidItems}}</td>
-                <td>{{event.eventDesc}}</td>
-                <td><a class="btn btn-primary" href="#/edit/{{event.id}}">Edit</a></td>
-            </tr>
-        </table>
+    <div class="col-md-4" ng-repeat="event in currentEvents">
+        <div class="panel">
+            <div class="panel-heading">
+                <div class="panel-title">
+                    {{event.eventName}}
+                </div>
+            </div>
+            <div class="panel-body">
+                <div>
+                    {{event.eventDate}}
+                </div>
+                <div>
+                    Attendees: {{event.attendees}}
+                </div>
+                <div>
+                    Items for Bid: {{event.bidItems}} ({{event.bidItemsTotal | currency}})
+                </div>
+                <div class="pull-right">
+                    <a class="btn btn-primary" href="#/edit/{{event.id}}">Edit</a>
+                </div>
+            </div>
+        </div>
     </div>
 </div>
