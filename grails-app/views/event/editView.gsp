@@ -1,6 +1,8 @@
 <div class="row">
     <div class="col-md-12 page-header">
-        <span class="auctionHeading">Event Details</span><a class="btn btn-primary pull-right" href="#/list">Return to List</a>
+        <span class="auctionHeading">Event Details</span>
+        <a ng-show="event.id" class="btn btn-primary pull-right" href="#/{{event.id}}">Return to Event Details</a>
+        <a ng-hide="event.id" class="btn btn-primary pull-right" href="#/list">Return to List</a>
     </div>
 </div>
 

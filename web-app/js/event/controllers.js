@@ -6,6 +6,10 @@ function EventListCtrl($scope, EventService) {
 }
 //PhoneListCtrl.$inject = ['$scope', '$http'];
 
+function EventItemCtrl($scope, $routeParams, EventService){
+    $scope.item = EventService.get({id: $routeParams.eventId});
+}
+
 function EventEditCtrl($scope, $routeParams, $location, EventService) {
     $scope.eventId = $routeParams.eventId
     if ($scope.eventId == 'new') {

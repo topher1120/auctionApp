@@ -7,6 +7,10 @@ class EventItem {
     String eventDesc
     String eventDate
     Integer attendees
+    Integer attendeeGoal
     Integer bidItems
     Integer bidItemsTotal
+    Integer bidItemGoal
+    Integer bidItemTotalGoal
+
 }
